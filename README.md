@@ -71,19 +71,13 @@ You will need to install a few stuff. Because we lost the access to the ssh serv
 ### Run it
 
 After installing all the prerequisites and the LLM, you will have to setup the backend 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Get OpenAI api key and Eleven Labs api key for the voice part of the ios app
+2. Run the flask backend
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   python main.py
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. make sure to update the IOS app server_url 
+4. Build the IOS app with Xcode 
 
 
 
