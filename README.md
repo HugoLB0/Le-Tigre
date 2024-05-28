@@ -24,16 +24,13 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites--installation">Prerequisites</a></li>
+        <li><a href="#run-it">Run it</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#built-by">Built by</a></li>
   </ol>
 
 
@@ -45,25 +42,12 @@
 Le Tigre integrates speech recognition, vision, and text-to-speech capabilities to offer a comprehensive multimodal AI solution. It can process and interpret audio inputs, detect and analyze visual elements, and generate descriptive and contextual text outputs, all in real time.
 This project was built in 24h during the Celebral Valley X Mistral AI hackathon. [Check out the project on Devpost!](https://devpost.com/software/le-tigre)
 
-
-
-
+https://github.com/HugoLB0/Le-Tigre/assets/66400773/c73f68c6-ba8f-48c6-b84f-651f861906a0
 
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-
-
-
+  
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -71,16 +55,22 @@ This project was built in 24h during the Celebral Valley X Mistral AI hackathon.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites & Installation
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+You will need to install a few stuff. Because we lost the access to the ssh server with GPU, the fine tuned model weight are lost. But you can still use it with a local LLM via [Ollama](https://ollama.com/library/mistral:v0.3/blobs/43070e2d4e53). We tried with the Mistral 7B v0.3 model
+* first install some python libraries. I recommend you to create a new virtualenv.
   ```sh
-  npm install npm@latest -g
+  pip install -r requirements.txt
   ```
+* optional: we used langchain which allows you to switch between a lot of LLMs. If you want to use local models with Ollama, run the following command to install it. But feel free to modify the backend if you want to switch LLMs provider. Also beware of models specific instruction tokens
+  ```sh
+  ollama pull mistral:v0.3
+  ```
+* if you want to use it with the IOS app, you will have to get a openai api key to setup whisper stt and a eleven labs api key for stt. 
 
-### Installation
+### Run it
 
+After installing all the prerequisites and the LLM, you will have to setup the backend 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
@@ -94,20 +84,6 @@ This is an example of how to list things you need to use the software and how to
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
-
-
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
 
 
 
@@ -151,34 +127,3 @@ in 24h, during the Celebreal Valley X Mistral AI hackathon
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
