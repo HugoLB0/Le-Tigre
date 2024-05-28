@@ -1,0 +1,11 @@
+Flask==3.0.3
+langchain==0.2.1
+langchain_community==0.2.1
+langchain_core==0.2.1
+langsmith==0.1.63
+opencv_python==4.9.0.80
+protobuf==5.27.0
+python-dotenv==1.0.1
+ultralytics==8.2.18
+transformers==4.41.1
+datasets==2.19.1
