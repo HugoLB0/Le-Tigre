@@ -47,6 +47,12 @@ https://github.com/HugoLB0/Le-Tigre/assets/66400773/c73f68c6-ba8f-48c6-b84f-651f
 
 ### Built With
 
+- Mistral AI
+- Ollama
+- Langchain
+- Weight & Biaises
+- Huggingface
+
   
 
 <!-- GETTING STARTED -->
