@@ -115,7 +115,6 @@ Hugo Le Belzic - [@hugolb05](https://twitter.com/hugolb05) - hlebelzic@ef.statio
 
 Darya Todoskova Zorkot - [@linkedin](https://www.linkedin.com/in/darya-todoskova-zorkot-3005181b8) - zorkotdasha@gmail.com
 
-in 24h, during the Celebreal Valley X Mistral AI hackathon
 
 
 
